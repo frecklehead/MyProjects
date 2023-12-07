@@ -1,0 +1,52 @@
+
+#clockface
+{
+    margin :auto;
+    position:relative;
+    background-color: white;
+
+    height: 40vw;
+    width:40vw;
+    border-radius: 50%;
+  
+    border:5px solid black;
+    top:4%;
+   left:10%;
+
+
+
+}
+
+#hour,#minute,#second{
+  position :absolute;
+ border-radius: 5px;
+ transform-origin: bottom;
+}
+
+#hour{
+   background-color: red;
+    width: 3%;
+    height: 20%;
+    top: 36%;
+    left: 49%;
+  
+}
+
+#minute{
+    background-color: blue;
+    width: 3%;
+    height: 30%;
+    top: 26%;
+    left: 49%;
+    
+    
+}
+#second{
+   background-color: brown;
+    width:3%;
+    height:40%;
+    top:16.5%;
+    left:49%;
+
+
+}
