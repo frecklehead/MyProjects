@@ -1,0 +1,29 @@
+:root{
+    --base:#f5d9d9;
+    --spacing:10px;
+    --blur:0px;
+
+}
+    
+body{
+    background: rgb(37, 30, 30);
+    margin: auto;
+    color:white;
+
+}
+h2{
+    color:orange;
+}
+.controls{
+   margin:50px;
+
+}
+label{
+  display: block;
+
+}
+img{
+    padding: var(--spacing);
+    filter: blur(var(--blur));
+    background: var(--base);
+}
