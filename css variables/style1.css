@@ -2,11 +2,12 @@
     --base:#f5d9d9;
     --spacing:10px;
     --blur:0px;
+    --background:rgb(0, 0, 0);
 
 }
     
 body{
-    background: rgb(37, 30, 30);
+    background:var(--background);
     margin: auto;
     color:white;
 
