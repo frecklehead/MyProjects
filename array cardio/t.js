@@ -33,4 +33,36 @@ const inventors = [
 console .log(map);
 
 //arrary.prototype.sort
+//thisis an comparison function used yo sort it recieves two 
+// determines the order
+const sorting= inventors.sort((a,b)=>(a.year>b.year?1:-1))
+console.table(sorting);
 
+//array.reduce.prototypw
+//reduce an array to an single accumulator value, based on the provided
+// callback function. function takes for parameters or lesser
+//accumulator
+//currentvalue
+//index of the currentvalue
+//array the function is called upon
+
+
+const reducing= inventors.reduce((accumulator, a)=>{
+  return accumulator+(a.passed-a.year);
+},0)//0is seting the initial value of accumulator to 0
+console.log(reducing);
+
+//sorting inventors on the basis of who lived the most
+const oldest= inventors.sort((a,b)=>{
+  p=a.passed-a.year
+  o=b.passed-b.year
+  return ((p<o?1:-1));
+})
+console.table(oldest)
+const category=document.querySelector(".mw-category")
+const links= Array.from(category.querySelectorAll("a"))
+const de= links 
+              .map(link=>link.textContent)
+              .filter( deu=> deu.includes("de"));
+
+              
