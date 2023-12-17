@@ -58,11 +58,6 @@ const oldest= inventors.sort((a,b)=>{
   o=b.passed-b.year
   return ((p<o?1:-1));
 })
-console.table(oldest)
-const category=document.querySelector(".mw-category")
-const links= Array.from(category.querySelectorAll("a"))
-const de= links 
-              .map(link=>link.textContent)
-              .filter( deu=> deu.includes("de"));
+
 
               
