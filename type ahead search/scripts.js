@@ -17,6 +17,22 @@ function findmatches(word,cities){//passing the array and the word to find
 }          
 
 function displaymatches(){
+  
+const matcharray= findmatches(this.value,cities);
 
-    
+const html= matcharray.map(place=>{
+    console.log(place.state)
+    return ` 
+    <li><span class="name">${place.city},${place.state}</span></li>
+    `;
+   
+}).join('');
+console.log(display1);
+display1.innerHTML=html;
+console.log(display1);
 }
+
+const Inputs= document.querySelector(".search")
+const display1=document.querySelector(".display1")
+Inputs.addEventListener("change",displaymatches)
+Inputs.addEventListener("keyup",displaymatches)
