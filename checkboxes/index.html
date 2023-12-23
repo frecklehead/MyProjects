@@ -62,13 +62,24 @@
     <div class="item">
         <!-- <input type="checkbox" class="checkbox"> -->
       
-        <input type=" text" placeholder="Enter you task here">
+        <input type=" text" id="input" placeholder="Enter you task here">
     <button onclick=addtask()>Add task</button>
     <button onclick=removetask()>Remove task</button>
+    <ul class="listcontainer">
+
+
+    </ul>
     </div>
   </div>
 
 <script>
+  const input=document.getElementById("input");
+  console.log(input)
+
+
+ function addtask(){
+
+ }
 const checkboxes = document.querySelectorAll('.inbox input[type="text"]');
 
 let lastChecked;
